@@ -12,7 +12,7 @@ def feed_forward(input_layer, hidden_layer, bias):
     return relu(z)
 
 
-def adam(derivative, stepsize, beta_1, beta_2, epsilon, fn, params, n_iter):
+def adam(derivative, stepsize, beta_1, beta_2, epsilon, params, n_iter):
     m = np.zeros(4)
     v = np.zeros(4)
     for t in range(n_iter):
